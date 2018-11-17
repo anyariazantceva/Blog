@@ -1,0 +1,46 @@
+#form {
+	width: 350px;
+	margin: 50px auto 0;
+	background: #e4e4e4;
+	padding: 10px;
+}
+
+textarea {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+ul li {
+	background: blue;
+	border: 1px solid black;
+	font-size: 24px;
+	list-style: none;
+	color: white;
+
+}
+
+#blog {
+	width: 370px;
+	margin: 0 auto;
+}
+
+#app {
+	margin: 0 auto;
+}
+
+ul {
+	padding: 0;
+}
+
+.card-body {
+	width: 348px;
+	margin-left: 10px;
+	margin-bottom: 15px;
+	height: auto;
+	border: none;
+
+}
+
+.msg-error {
+	border-color: red;
+}

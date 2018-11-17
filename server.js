@@ -1,5 +1,5 @@
 const express = require("express");
-const fs = require("fs");
+const fs = require("mz/fs");
 const app = express();
 const port = 4000;
 const statLocation = __dirname + "/posts.txt";
