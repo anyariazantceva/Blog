@@ -4,12 +4,12 @@ const app = express();
 const port = 4000;
 const statLocation = __dirname + "/posts.txt";
 
-app.use(express.static(__dirname));
+app.use(express.static(__dirname + "/public/"));
 
 let totalPosts = parseInt(fs.readFileSync(statLocation));
 
 app.get("/save", (req, res) => {
-    totalPosts += parseInt(req.query.errors);
+    totalPosts += parseInt(req.query.posts);
 
     // запись в файл
     fs.writeFile(statLocation, totalPosts, (err) => {
@@ -24,7 +24,7 @@ app.get("/save", (req, res) => {
 
 app.get("/posts", (req, res) => {
 
-    res.send(totalPosts);
+    res.send(totalPosts.toString());
 });
 
 
